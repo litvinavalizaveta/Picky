@@ -8,4 +8,13 @@
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="EntityTypeConfigurations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EntityTypeConfigurations\" />
+  </ItemGroup>
 </Project>
