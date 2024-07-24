@@ -17,4 +17,9 @@
   <ItemGroup>
     <Folder Include="EntityTypeConfigurations\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Picky.Application\Picky.Application.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

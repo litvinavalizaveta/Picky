@@ -1,10 +1,9 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Picky.Domain.Models;
 
 namespace Picky.Application.Interfaces
 {
-	public struct IPickyDbContext : IDbContext
+	public interface IPickyDbContext
 	{
 		DbSet<Picture> Pictures { get; set; }
 		Task<int> SaveChangesAsync(CancellationToken cancellationToken);

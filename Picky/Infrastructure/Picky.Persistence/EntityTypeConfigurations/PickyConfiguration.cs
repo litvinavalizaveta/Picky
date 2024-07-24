@@ -1,18 +1,15 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Picky.Domain.Models;
 
 namespace Picky.Persistence.EntityTypeConfigurations
 {
 	public class PickyConfiguration : IEntityTypeConfiguration<Picture>
 	{
-		public PickyConfiguration()
-		{
-			public void Configure(EntityTypeBuilder<Picture> builder)
-			{
+        public void Configure(EntityTypeBuilder<Picture> builder)
+        {
 
-			}
-		}
+        }
 	}
 }
 
